@@ -73,7 +73,6 @@
 }
 
 .speakers {
-  padding: 100px 0 !important;
   position: relative;
   background-color: rgba(238, 239, 241, 0.2) !important;
 }
@@ -90,20 +89,14 @@
   opacity: 0.6;
   z-index: -2;
 }
-.speakers::before .row {
-  display: grid !important;
-  grid-template-columns: 1fr 1fr 1fr 1fr !important;
-  gap: 30px !important;
-}
+
 @media (max-width: 768px) {
   .speakers span {
     line-height: 0.8em !important;
     font-size: 12px !important;
   }
 }
-.speakers .speaker-card {
-  padding: 0 !important;
-}
+
 .speakers .speaker-card .pic {
   box-shadow: inset 0px -5px 10px -7px #000000;
 }
