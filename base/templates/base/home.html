@@ -15,7 +15,7 @@
                             </div>
                             <div class="content">
                                 <p class="m-1">Happy Friday</p>
-                                <p class="m-1">40% gacha chegirmalar amal qiladi Iyul 31, 15:00 gacha</p>
+                                <p class="m-1"><span class="fw-bold"> {{ discount.unit }}% </span>gacha chegirmalar amal qiladi <span class="fw-bold">{{ discount.date_until|date:"F j" }}</span> gacha</p>
                             </div>
                         </div>
                         <h1 class="text-uppercase display-1 fw-bold my-3">ijtimoiy media marketing intensiv kursi</h1>
@@ -40,7 +40,7 @@
                                     <div class="modal-body">
                                         <form action="">
                                             <div class="input-group">
-                                                <input class="p-3 my-2 form-control-lg form-control" type="text" placeholder="Ism-sharif: ">
+                                                <input class="p-3 my-2 form-control-lg form-control" type="text" placeholder="Ism-sharif:">
                                             </div>
                     
                                             
@@ -48,13 +48,6 @@
                                                 <input type="tel" class="form-control p-3 my-2 form-control-lg" name="phone" id="phone" data-error="Please enter a requested format - ex. 888 888-8888" value="" placeholder="Phone: ">
                                             </div>
                     
-                                            
-                    
-                                            <div class="input-group">
-                                                <input class="p-3 my-2 form-control-lg form-control" type="email" placeholder="E-mail: ">
-                                            </div>
-                    
-                                            
                                         </form>
                                     </div>
                                     <div class="modal-footer">
@@ -248,7 +241,6 @@
     </div>
 
     
-    
 
     <!-- SPEAKERS SECTION  -->
     <section class="speakers pad-100">
@@ -348,13 +340,15 @@
                 </h1>
             </div>
             <div class="lessons-list mt-md-5">
+                {% for lesson in lessons %}
                 <div class="lessons-item">
                     <div class="item">
-                        <h1><span>1</span></h1>
-                        <h3>Upskill in social media, without the risk</h3>
-                        <span class="">Learn without risking your money on a paid course. You decide if you want to extend your studies after, however there's no obligation to.</span>
+                        <h1><span>{{ lesson.priority }}</span></h1>
+                        <h3>{{ lesson.title }}</h3>
+                        <span class="">{{ lesson.content }}</span>
                     </div>
                 </div>
+                {% endfor %}
                 <div class="lessons-item">
                     <div class="item">
                         <h1><span>2</span></h1>
@@ -452,6 +446,7 @@
         </div>
     </div>
 
+    
 
     <!-- Contact and PAYMENT Section -->
     <div class="contact-s pad-100">
@@ -465,20 +460,15 @@
                     </div>
   
                     <h1>2 - Qadam: Bog'lanish malumotlarini to'ldiring</h1>
-                    <form action="">
+                    <form action="" method="POST">
+                        {% csrf_token %}
                         <div class="input-group">
-                            <input class="p-3 my-2 form-control-lg form-control" type="text" placeholder="Ism-sharif: ">
+                            <input class="p-3 my-2 form-control-lg form-control" type="text" placeholder="Ism-sharif: " name="fio">
                         </div>
 
                         
                         <div class="input-group">
                             <input type="tel" class="form-control p-3 my-2 form-control-lg" name="phone" id="phone" data-error="Please enter a requested format - ex. 888 888-8888" value="" placeholder="Phone: ">
-                        </div>
-
-                        
-
-                        <div class="input-group">
-                            <input class="p-3 my-2 form-control-lg form-control" type="email" placeholder="E-mail: ">
                         </div>
 
                         <div class="input-group">
@@ -496,7 +486,7 @@
                 </div>
                 <div class="rounded-3 bg-white p-5 shadow">
                     
-                    <div class="cash display-5 rounded border border-2 border-dark mt-md-5 mt-0">
+                    <div class="cash display-5 rounded border border-2 border-dark">
                         <h1>Kurs Narxlari:</h1>
                         <span class="text-overline"><del>1 000 000 so'm</del><br></span>
                         <span>800 000 so'm</span>
@@ -518,6 +508,7 @@
             </div>
         </div>
     </div>
+
 
 
     <!-- FAQ Section -->
