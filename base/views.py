@@ -1,7 +1,7 @@
 from django.shortcuts import render,redirect
 
 from base.forms import LeadForm
-from .models import Discount, Lesson
+from .models import Discount, Lesson, Lead
 
 # Create your views here.
 
@@ -10,20 +10,24 @@ def home(request):
     discount = Discount.objects.get(id=1)
     lessons = Lesson.objects.all()
 
-    form = LeadForm()
+    
     if request.method == "POST":
-        form = LeadForm(request.POST)
-        if form.is_valid():
-            form.save()
+        fio = request.POST['fio']
+        phone = request.POST['phone']
+        company = request.POST.get('company', False)
+        company_name = request.POST['company_name']
+        inn = request.POST['inn']
+        
 
-            return redirect('base-home')
-    
-    else:
-        form = LeadForm()
-    
+        lead = Lead(fio = fio, phone = phone, company = company, company_name = company_name, inn = inn)
+        lead.save()
 
 
-    context = {'discount': discount, 'lessons': lessons, 'form': form }
+        return redirect('base-home')
+        
+
+
+    context = {'discount': discount, 'lessons': lessons }
     return render(request, 'base/home.html', context)
 
 
