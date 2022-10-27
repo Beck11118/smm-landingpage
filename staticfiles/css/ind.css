@@ -1,0 +1,466 @@
+.pad-100 {
+  padding: 100px 20px !important;
+}
+
+@media (max-width: 768px) {
+  .pad-100 {
+    padding: 30px 20px !important;
+  }
+
+  .showcase h1 {
+    font-size: 40px !important;
+  }
+  .showcase p {
+    font-size: 16px;
+    line-height: 1em;
+  }
+
+  .why-join h2 {
+    font-size: 25px !important;
+    line-height: 1.4em;
+    margin-bottom: 20px;
+  }
+  .why-join ul.list-unstyled span {
+    font-size: 16px !important;
+  }
+  .why-join ul.list-unstyled span svg {
+    width: 18px !important;
+    height: 18px !important;
+  }
+  .why-join h3 {
+    font-size: 1.2rem;
+  }
+  .why-join .title {
+    margin: 0;
+    height: 150px;
+  }
+  .why-join .list-reason h1 {
+    font-size: 36px;
+  }
+  .why-join .list-reason div.d-block {
+    width: 50px !important;
+  }
+  .why-join .list-reason p {
+    font-size: 12px;
+  }
+
+  .course-who .top-sec h2 {
+    font-size: 36px !important;
+  }
+  .course-who .top-sec p {
+    font-size: 16px !important;
+  }
+}
+.showcase a.btn {
+  font-weight: 100 !important;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  transition: all 0.4s ease-in-out;
+}
+.showcase a.btn:hover {
+  background-position: 100% 0;
+  color: #1c5686;
+}
+.showcase a.btn:focus {
+  outline: none;
+}
+.showcase a.btn {
+  background-image: linear-gradient(to right, #25aae1, #2fc5d8, #d5fc79, #d5fc79);
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.3);
+}
+
+.showcase .container form input {
+  background-color: #eeeff1;
+}
+.showcase .container form input[type=checkbox]:checked {
+  background-color: #0d6efd;
+}
+.showcase .container form a.btn h5{
+  padding: 8px 40px !important;
+  font-size: 20px;
+  margin: 0;
+  font-weight: 400 !important;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  transition: all 0.4s ease-in-out;
+}
+.showcase .container form a.btn h5:hover{
+  background-position: 100% 0 !important;
+  color:#1c5686 !important;
+}
+.showcase .container form input.btn{
+  padding: 10px 40px !important;
+  font-size: 20px;
+  margin: 20px 0;
+  font-weight: 400 !important;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  transition: all 0.4s ease-in-out;
+}
+.showcase .container form input.btn:hover{
+  background-position: 100% 0;
+  color: #1c5686;
+}
+.showcase .container form input.btn:focus {
+  outline: none;
+}
+.showcase .container form input.btn {
+  background-image: linear-gradient(to right, #25aae1, #2fc5d8, #d5fc79, #d5fc79);
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.3);
+}
+.showcase .container form #norm1,  .showcase .container form #norm2{
+  background-position: 100% 0 !important;
+  color:#1c5686 !important;
+  background-color: white !important;
+}
+
+
+
+
+.speakers {
+  position: relative;
+  background-color: rgba(238, 239, 241, 0.2) !important;
+}
+.speakers::before {
+  content: "";
+  background-image: url("../pics/bg-pics/Meet_the_Team_background-2.webp") !important;
+  position: absolute;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.6;
+  z-index: -2;
+}
+
+@media (max-width: 768px) {
+  .speakers span {
+    line-height: 0.8em !important;
+    font-size: 12px !important;
+  }
+}
+
+.speakers .speaker-card .pic {
+  box-shadow: inset 0px -5px 10px -7px #000000;
+}
+.speakers .speaker-card .pic img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0% 0%;
+     object-position: 0% 0%;
+}
+.speakers .speaker-card .card-content {
+  padding: 15px;
+}
+.speakers .speaker-card .card-content .h5 {
+  font-size: 25px;
+  color: #1c5686;
+}
+.speakers .speaker-card .card-content p {
+  font-size: 15px;
+  color: #404040;
+  text-transform: uppercase;
+  font-weight: 200 !important;
+}
+@media (max-width: 768px) {
+  .speakers .pic img {
+    width: 100%;
+    height: 150px !important;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0% 0%;
+       object-position: 0% 0%;
+  }
+  .speakers .card-content {
+    padding: 10px;
+  }
+  .speakers .card-content .h5 {
+    font-size: 16px !important;
+  }
+  .speakers .card-content p {
+    font-size: 12px !important;
+    line-height: 1.2rem !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .speakers .pic img {
+    height: 200px !important;
+  }
+  .speakers .card-content {
+    padding: 10px;
+  }
+  .speakers .card-content .h5 {
+    font-size: 18px !important;
+  }
+  .speakers .card-content p {
+    font-size: 12px !important;
+    line-height: 1.2rem !important;
+  }
+}
+
+.course-info .container .icon {
+  margin: 0;
+  display: flex !important;
+  width: 100%;
+}
+.course-info .container .icon i {
+  color: #666;
+  font-weight: 300;
+  width: 100%;
+  font-size: 100px;
+}
+
+.why-join-outside {
+  content: "";
+  background-image: linear-gradient(rgba(238, 239, 241, 0.5), rgba(238, 239, 241, 0.2));
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+}
+
+.lessons {
+  background: url(//v.fastcdn.co/u/fc6a2a7c/60182175-0-Dark-blue-Gradient-B.png) repeat rgb(30, 30, 30) 50% 50%/cover;
+}
+.lessons h5 {
+  color: #2fc5d8 !important;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+.lessons h1 {
+  font-size: 40px;
+  text-align: center;
+}
+.lessons .lessons-list {
+  display: grid;
+  grid-template-columns: 1fr !important;
+}
+.lessons .lessons-list .lessons-item {
+  margin-top: 50px !important;
+  display: flex !important;
+  gap: 50px !important;
+  position: relative;
+}
+.lessons .lessons-list .lessons-item .item {
+  width: 42%;
+}
+.lessons .lessons-list .lessons-item .item h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+.lessons .lessons-list .lessons-item .item h1 {
+  margin-top: -10px;
+  display: flex;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.lessons .lessons-list .lessons-item .item h1 span {
+  color: #000000;
+  position: absolute;
+  font-size: 25px !important;
+}
+.lessons .lessons-list .lessons-item .item span {
+  font-size: 14px;
+  font-weight: 300;
+}
+.lessons .lessons-list .lessons-item:nth-child(odd) {
+  text-align: right;
+}
+.lessons .lessons-list .lessons-item:nth-child(odd) h1 {
+  position: absolute;
+  top: -0.2em;
+  right: 47%;
+}
+.lessons .lessons-list .lessons-item:nth-child(even) {
+  justify-content: flex-end !important;
+}
+.lessons .lessons-list .lessons-item:nth-child(even) h1 {
+  position: absolute;
+  top: -0.2em;
+  right: 47%;
+}
+
+.certificate .card-header .row img {
+  width: 100%;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+  -o-object-position: 50% 0;
+     object-position: 50% 0;
+}
+
+.contact-s {
+  background-color: #eeeff1;
+}
+.contact-s .container .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px !important;
+}
+.contact-s .container .row h1 {
+  font-size: 25px;
+  color: #1c5686;
+  font-weight: 500;
+}
+.contact-s .container .row form input {
+  background-color: #eeeff1;
+}
+.contact-s .container .row form input[type=checkbox]:checked {
+  background-color: #0d6efd;
+}
+
+.contact-s .container .row form input.btn {
+  padding: 10px 40px;
+  font-size: 20px;
+  margin: 20px 0;
+  font-weight: 400 !important;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  transition: all 0.4s ease-in-out;
+}
+.contact-s .container .row form input.btn:hover {
+  background-position: 100% 0;
+  color: #1c5686;
+}
+.contact-s .container .row form input.btn:focus {
+  outline: none;
+}
+.contact-s .container .row form input.btn {
+  background-image: linear-gradient(to right, #25aae1, #2fc5d8, #d5fc79, #d5fc79);
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.3);
+}
+.contact-s .container .row .anor {
+  background-image: url(../pics/image_1681.jpg);
+  background-position: 50% 50%;
+  background-size: cover;
+  color: white;
+}
+.contact-s .container .row .anor h1 {
+  color: #fff;
+}
+.contact-s .container .row .anor .h1 {
+  color: #25aae1 !important;
+}
+.contact-s .container .row .cash h2 {
+  color: #25aae1 !important;
+}
+@media (max-width: 768px) {
+  .contact-s .container .row {
+    grid-template-columns: 1fr !important;
+  }
+  .contact-s .container .row h1 {
+    font-size: 20px;
+  }
+}
+
+.faq {
+  background-image: linear-gradient(269deg, rgba(28, 86, 134, 0.9) 0%, #000 100%) !important;
+  background-size: auto !important;
+  background-attachment: scroll !important;
+  background-position: 50% 50% !important;
+  background-repeat: no-repeat !important;
+  padding-bottom: 50px !important;
+}
+.faq .accordion {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 20px;
+}
+.faq .accordion .accordion-item {
+  border: none;
+}
+.faq .accordion .accordion-item h2 button {
+  font-size: 18px;
+  font-weight: 300;
+}
+.faq .accordion .accordion-item .accordion-body {
+  font-size: 18px !important;
+}
+.faq .social-icon .row {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  border-bottom: 0.1px solid #eeeff1;
+}
+.faq .social-icon .row a {
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 40px;
+  margin-top: 30px;
+  color: #fff;
+  transition: 0.5s;
+}
+.faq .social-icon .row a:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .lessons h1 {
+    line-height: 0.5em !important;
+  }
+  .lessons h1 span {
+    font-size: 14px;
+    line-height: 0.5em !important;
+  }
+  .lessons .lessons-list .item {
+    width: 100% !important;
+    text-align: left;
+  }
+  .lessons .lessons-list .item h3 {
+    margin-left: 60px !important;
+  }
+  .lessons .lessons-list .item h1 {
+    position: absolute !important;
+    top: -10px !important;
+    left: 0 !important;
+  }
+
+  .faq h2 {
+    font-size: 20px !important;
+  }
+  .faq .accordion {
+    grid-template-columns: 1fr !important;
+  }
+  .faq .accordion .accordion-item h2 button {
+    font-size: 14px !important;
+    padding: 10px !important;
+  }
+  .faq .accordion .accordion-item .accordion-body {
+    color: #404040 !important;
+    font-size: 12px !important;
+  }
+  .faq .social-icon .row a {
+    font-size: 25px !important;
+  }
+}
+@media (max-width: 576px) {
+  .lessons-item .item h1 {
+    top: 5px !important;
+  }
+}/*# sourceMappingURL=index.css.map */

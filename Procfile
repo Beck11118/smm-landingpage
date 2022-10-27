@@ -1,0 +1,1 @@
+web: gunicorn anata.wsgi --log-file -
