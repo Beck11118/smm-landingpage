@@ -72,6 +72,60 @@
   box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.3);
 }
 
+.showcase .container form input {
+  background-color: #eeeff1;
+}
+.showcase .container form input[type=checkbox]:checked {
+  background-color: #0d6efd;
+}
+.showcase .container form a.btn h5{
+  padding: 8px 40px !important;
+  font-size: 20px;
+  margin: 0;
+  font-weight: 400 !important;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  transition: all 0.4s ease-in-out;
+}
+.showcase .container form a.btn h5:hover{
+  background-position: 100% 0 !important;
+  color:#1c5686 !important;
+}
+.showcase .container form input.btn{
+  padding: 10px 40px !important;
+  font-size: 20px;
+  margin: 20px 0;
+  font-weight: 400 !important;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  transition: all 0.4s ease-in-out;
+}
+.showcase .container form input.btn:hover{
+  background-position: 100% 0;
+  color: #1c5686;
+}
+.showcase .container form input.btn:focus {
+  outline: none;
+}
+.showcase .container form input.btn {
+  background-image: linear-gradient(to right, #25aae1, #2fc5d8, #d5fc79, #d5fc79);
+  box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.3);
+}
+.showcase .container form #norm1,  .showcase .container form #norm2{
+  background-position: 100% 0 !important;
+  color:#1c5686 !important;
+  background-color: white !important;
+}
+
+
+
+
 .speakers {
   position: relative;
   background-color: rgba(238, 239, 241, 0.2) !important;
@@ -270,6 +324,10 @@
 .contact-s .container .row form input {
   background-color: #eeeff1;
 }
+.contact-s .container .row form input[type=checkbox]:checked {
+  background-color: #0d6efd;
+}
+
 .contact-s .container .row form input.btn {
   padding: 10px 40px;
   font-size: 20px;
@@ -303,6 +361,9 @@
   color: #fff;
 }
 .contact-s .container .row .anor .h1 {
+  color: #25aae1 !important;
+}
+.contact-s .container .row .cash h2 {
   color: #25aae1 !important;
 }
 @media (max-width: 768px) {
@@ -352,11 +413,11 @@
   width: fit-content;
   font-size: 40px;
   margin-top: 30px;
-  color: #25aae1;
+  color: #fff;
   transition: 0.5s;
 }
 .faq .social-icon .row a:hover {
-  color: #d5fc79;
+  color: #fff;
 }
 
 @media (max-width: 768px) {

@@ -22,7 +22,7 @@ class Lesson(models.Model):
     priority = models.IntegerField(default=1)
 
     def __str__(self):
-        return self.title 
+        return str(self.priority) + " - " + self.title
 
     class Meta: 
         ordering = ['priority']
